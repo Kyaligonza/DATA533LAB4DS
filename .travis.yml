@@ -4,7 +4,7 @@ python:
   - "3.5"
   - "3.6"
 script:
-  - python tran.py
-  - python sub.py
+  - python TestModSub.py
+  - python TestModTran
   - python TestModule1.py
   - python TestModule2.py
