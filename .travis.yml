@@ -6,3 +6,5 @@ python:
 script:
   - python tran.py
   - python sub.py
+  - python TestModule1.py
+  - python TestModule2.py
