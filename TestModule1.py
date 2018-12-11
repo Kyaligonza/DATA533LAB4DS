@@ -16,12 +16,7 @@ class TestMirror(unittest.TestCase):
         self.t5 = Mirror("dog \ where has it gone") # sentence with \ inside 
         
     def tearDown(self):
-        self.t1 = Mirror("DOG IS")#test for  all capitals
-        self.t2 = Mirror("DOG")# test for single word
-        self.t3 = Mirror("dog is mad")#test for  all lowercases
-        self.t4 = Mirror("dog 'he said' what")# sentence(s) with '' inside
-        self.t5 = Mirror("dog \ where has it gone") # sentence with \ inside 
-
+        pass
     def test_mirror(self):
         self.assertEqual(self.t1.text_revmirror(), 'IS DOG')
         self.assertTrue(self.t2.text_revmirror(), 'DOG')
@@ -32,4 +27,5 @@ class TestMirror(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         print("teardownclass to complete running suite")
-  
+        
+unittest.main(argv=[''], verbosity=2, exit=False)

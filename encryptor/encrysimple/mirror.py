@@ -2,9 +2,27 @@
 
 class Mirror:
     def __init__(self,text):
-        self.text = text
+        try: 
+            self.text = text
+
+            if len(str(text)) <1:
+                
+                raise ValueError
+        except ValueError:
+            print("This is empty")
+        else:
+            pass
+        finally:
+            print('first')
+          
     def text_revmirror(self):
-        words = self.text.split()
-        text_rev1 = " ".join(reversed(words))
-        #print("The encrypted message is:",text_rev1)
-        return text_rev1
+        try:
+            words = self.text.split()
+            text_rev1 = " ".join(reversed(words))
+            return text_rev1
+        except AttributeError:
+            print("attribute error")
+        else:
+            pass
+        finally:
+            print('Finish')
