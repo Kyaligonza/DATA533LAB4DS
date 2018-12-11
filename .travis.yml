@@ -5,6 +5,6 @@ python:
   - "3.6"
 script:
   - python TestModSub.py
-  - python TestModTran
+  - python TestModTran.py
   - python TestModule1.py
   - python TestModule2.py
